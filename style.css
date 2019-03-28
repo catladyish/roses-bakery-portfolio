@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+#mobile {
+	font-size: 5em;
+	color: red;
+}
+
+@media only screen and (min-width: 780px) {
+	#mobile {
+		display: none;
+    }
+    
+    body {
+	    margin: 0px;
+	    padding: 0px;
+	    background-image: url("bg.jpg");
+	    background-size: cover;
+	    font-family: 'Shadows Into Light', cursive;
+	    font-size: 1.5em;
+	    text-align: center;
+	    font-weight: bold;
+	    letter-spacing: 3px;
+    }
+
+    #row {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    width: 80vw;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 50px;
+	    margin-bottom: 50px;
+    }
+    #row > p {
+	    padding: 10px;
+	    border: solid 4px black;
+	    background-color: rgb(255, 255, 255, .4);
+	    width: 125px;
+	    height: 45px;
+    }
+
+    #row > p:hover {
+	    padding: 18px;
+    }
+
+    .panel {
+	    background-color: rgb(232, 176, 176, .7);
+	    width: 65vw;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 50px;
+	    
+    }
+
+    #ribbon-left {
+	    position: fixed;
+	    left: -300px;
+	    top: -5px;
+	    filter: brightness(50%);
+    }
+
+    #ribbon-right {
+	    position: fixed;
+	    right: -300px;
+	    top: -5px;
+	    filter: brightness(53%);
+	    filter: saturation(80%);
+    }
+
+}
+
+
+
+
+
